@@ -1,0 +1,39 @@
+/* 保留第二屏共同轴线，按实际 App 截图的完整比例调整边框与留白。 */
+.revised-introduction{display:block;padding-block:57px 69px}
+.intro-heading{text-align:center;margin-inline:auto;max-width:900px}
+.intro-context{font-size:16px;line-height:1.6;color:var(--muted)}
+.intro-heading h2{margin-top:11px;font-size:36px;line-height:1.32;font-weight:500;letter-spacing:-.034em;text-wrap:balance}
+.intro-heading .audience{margin:18px auto 0;max-width:660px;font-size:15px;line-height:1.8}
+.intro-layout{display:grid;grid-template-columns:340px minmax(0,1fr);align-items:center;gap:86px;width:min(100%,850px);margin:42px auto 0}
+.revised-introduction .product-preview{width:100%;max-width:340px}
+.revised-introduction .preview-mat{padding:0}
+.revised-introduction .preview-mat:before{content:none}
+.revised-introduction .screen-frame{width:270px;padding:0;border-radius:27px;box-shadow:0 18px 40px rgba(91,62,41,.09)}
+.revised-introduction .screen-frame img{border-radius:26px}
+.revised-introduction .product-preview figcaption{font-size:12px;letter-spacing:.02em;margin-top:16px}
+.intro-details{max-width:365px}
+.intro-details .benefits{margin:0;display:block}
+.intro-details .benefits>div{padding:23px 0;border-top:1px solid var(--line)}
+.intro-details .benefits h3{font-size:19px;line-height:1.4;font-weight:500;letter-spacing:-.025em}
+.intro-details .benefits p{margin-top:7px;max-width:28ch;font-size:14px;line-height:1.75}
+.intro-details>.quiet-link{margin-top:18px;font-size:12px;gap:22px}
+@media(max-width:900px){
+  .intro-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:45px;max-width:760px}
+  .intro-details .benefits h3{font-size:18px}
+}
+@media(max-width:700px){
+  .revised-introduction{padding-block:46px 56px}
+  .intro-heading{text-align:center}
+  .intro-context{font-size:14px}
+  .intro-heading h2{font-size:28px;line-height:1.37;max-width:22ch;margin:11px auto 0}
+  .intro-heading .audience{margin-top:17px;max-width:36ch;font-size:14px;line-height:1.8}
+  .intro-layout{grid-template-columns:1fr;gap:29px;margin-top:34px}
+  .revised-introduction .product-preview{max-width:100%;margin-inline:auto}
+  .revised-introduction .screen-frame{width:260px;max-width:100%;padding:0;border-radius:26px;margin-inline:auto}
+  .revised-introduction .product-preview figcaption{margin-top:14px;font-size:12px}
+  .intro-details{max-width:100%}
+  .intro-details .benefits>div{padding:20px 0}
+  .intro-details .benefits h3{font-size:17px}
+  .intro-details .benefits p{font-size:14px;margin-top:5px;max-width:34ch}
+  .intro-details>.quiet-link{margin-top:13px;font-size:12px}
+}
